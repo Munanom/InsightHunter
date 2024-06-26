@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "/Users/munanuman/Desktop/Stock Price Prediction/Website/landing page/public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

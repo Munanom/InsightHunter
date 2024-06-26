@@ -1,0 +1,123 @@
+[debug] [2024-06-23T09:12:11.836Z] ----------------------------------------------------------------------
+[debug] [2024-06-23T09:12:11.838Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2024-06-23T09:12:11.838Z] CLI Version:   13.11.4
+[debug] [2024-06-23T09:12:11.839Z] Platform:      darwin
+[debug] [2024-06-23T09:12:11.839Z] Node Version:  v20.10.0
+[debug] [2024-06-23T09:12:11.839Z] Time:          Sun Jun 23 2024 12:12:11 GMT+0300 (East Africa Time)
+[debug] [2024-06-23T09:12:11.839Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-23T09:12:11.887Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-23T09:12:11.887Z] > authorizing via signed-in user (munanuman55@gmail.com)
+[debug] [2024-06-23T09:12:11.887Z] [iam] checking project insighthunter-c345a for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-06-23T09:12:11.888Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/insighthunter-c345a:testIamPermissions [none]
+[debug] [2024-06-23T09:12:11.888Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/insighthunter-c345a:testIamPermissions x-goog-quota-user=projects/insighthunter-c345a
+[debug] [2024-06-23T09:12:11.888Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/insighthunter-c345a:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-06-23T09:12:13.612Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/insighthunter-c345a:testIamPermissions 200
+[debug] [2024-06-23T09:12:13.613Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/insighthunter-c345a:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-06-23T09:12:13.614Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/insighthunter-c345a [none]
+[debug] [2024-06-23T09:12:14.234Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/insighthunter-c345a 200
+[debug] [2024-06-23T09:12:14.235Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/insighthunter-c345a {"projectId":"insighthunter-c345a","projectNumber":"761984106393","displayName":"InsightHunter","name":"projects/insighthunter-c345a","resources":{"hostingSite":"insighthunter-c345a"},"state":"ACTIVE","etag":"1_640b5a33-6919-4d35-9a71-90a62d78c15c"}
+[info] 
+[info] === Deploying to 'insighthunter-c345a'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2024-06-23T09:12:14.242Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/insighthunter-c345a/versions [none]
+[debug] [2024-06-23T09:12:14.242Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/insighthunter-c345a/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2024-06-23T09:12:16.250Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/insighthunter-c345a/versions 500
+[debug] [2024-06-23T09:12:16.251Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/insighthunter-c345a/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2024-06-23T09:12:16.424Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}
+[debug] [2024-06-23T09:12:22.058Z] ----------------------------------------------------------------------
+[debug] [2024-06-23T09:12:22.060Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2024-06-23T09:12:22.060Z] CLI Version:   13.11.4
+[debug] [2024-06-23T09:12:22.061Z] Platform:      darwin
+[debug] [2024-06-23T09:12:22.061Z] Node Version:  v20.10.0
+[debug] [2024-06-23T09:12:22.061Z] Time:          Sun Jun 23 2024 12:12:22 GMT+0300 (East Africa Time)
+[debug] [2024-06-23T09:12:22.061Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-23T09:12:22.108Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-23T09:12:22.108Z] > authorizing via signed-in user (munanuman55@gmail.com)
+[debug] [2024-06-23T09:12:22.108Z] [iam] checking project insighthunter-c345a for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-06-23T09:12:22.110Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/insighthunter-c345a:testIamPermissions [none]
+[debug] [2024-06-23T09:12:22.110Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/insighthunter-c345a:testIamPermissions x-goog-quota-user=projects/insighthunter-c345a
+[debug] [2024-06-23T09:12:22.110Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/insighthunter-c345a:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-06-23T09:12:23.808Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/insighthunter-c345a:testIamPermissions 200
+[debug] [2024-06-23T09:12:23.809Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/insighthunter-c345a:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-06-23T09:12:23.810Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/insighthunter-c345a [none]
+[debug] [2024-06-23T09:12:24.305Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/insighthunter-c345a 200
+[debug] [2024-06-23T09:12:24.305Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/insighthunter-c345a {"projectId":"insighthunter-c345a","projectNumber":"761984106393","displayName":"InsightHunter","name":"projects/insighthunter-c345a","resources":{"hostingSite":"insighthunter-c345a"},"state":"ACTIVE","etag":"1_640b5a33-6919-4d35-9a71-90a62d78c15c"}
+[info] 
+[info] === Deploying to 'insighthunter-c345a'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2024-06-23T09:12:24.311Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/insighthunter-c345a/versions [none]
+[debug] [2024-06-23T09:12:24.312Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/insighthunter-c345a/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2024-06-23T09:12:26.255Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/insighthunter-c345a/versions 500
+[debug] [2024-06-23T09:12:26.255Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/insighthunter-c345a/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2024-06-23T09:12:26.413Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}
+[debug] [2024-06-23T09:13:03.515Z] ----------------------------------------------------------------------
+[debug] [2024-06-23T09:13:03.517Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2024-06-23T09:13:03.517Z] CLI Version:   13.11.4
+[debug] [2024-06-23T09:13:03.518Z] Platform:      darwin
+[debug] [2024-06-23T09:13:03.518Z] Node Version:  v20.10.0
+[debug] [2024-06-23T09:13:03.518Z] Time:          Sun Jun 23 2024 12:13:03 GMT+0300 (East Africa Time)
+[debug] [2024-06-23T09:13:03.518Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-23T09:13:03.568Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-23T09:13:03.568Z] > authorizing via signed-in user (munanuman55@gmail.com)
+[debug] [2024-06-23T09:13:03.568Z] [iam] checking project insighthunter-c345a for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-06-23T09:13:03.569Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/insighthunter-c345a:testIamPermissions [none]
+[debug] [2024-06-23T09:13:03.569Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/insighthunter-c345a:testIamPermissions x-goog-quota-user=projects/insighthunter-c345a
+[debug] [2024-06-23T09:13:03.570Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/insighthunter-c345a:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-06-23T09:13:05.184Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/insighthunter-c345a:testIamPermissions 200
+[debug] [2024-06-23T09:13:05.185Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/insighthunter-c345a:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-06-23T09:13:05.186Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/insighthunter-c345a [none]
+[debug] [2024-06-23T09:13:05.660Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/insighthunter-c345a 200
+[debug] [2024-06-23T09:13:05.661Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/insighthunter-c345a {"projectId":"insighthunter-c345a","projectNumber":"761984106393","displayName":"InsightHunter","name":"projects/insighthunter-c345a","resources":{"hostingSite":"insighthunter-c345a"},"state":"ACTIVE","etag":"1_640b5a33-6919-4d35-9a71-90a62d78c15c"}
+[info] 
+[info] === Deploying to 'insighthunter-c345a'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2024-06-23T09:13:05.668Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/insighthunter-c345a/versions [none]
+[debug] [2024-06-23T09:13:05.668Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/insighthunter-c345a/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2024-06-23T09:13:07.514Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/insighthunter-c345a/versions 500
+[debug] [2024-06-23T09:13:07.515Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/insighthunter-c345a/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2024-06-23T09:13:07.689Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}
